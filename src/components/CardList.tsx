@@ -35,7 +35,6 @@ export function CardList (){
 
   return(
     <section>
-      <h1 className="title">Fut<span>zeiros</span></h1>
       <ul>
         {cardList.map(card =><Card key={card.name} card={card}/>)}
       </ul>

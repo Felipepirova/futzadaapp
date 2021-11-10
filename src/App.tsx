@@ -1,11 +1,11 @@
 import "../src/styles/global.scss"
-import {CardList} from "../src/components/CardList"
+import {Home} from "./pages/Home"
 
 function App() {
 
   return (
     <>
-      <CardList/>
+      <Home/>
     </>
   );
 }

@@ -1,12 +1,5 @@
 section {
   margin: 1rem;
-
-  .title {
-    color: var(--green);
-  }
-  span {
-    color: var(--grey-dark);
-  }
 }
 
 .card {
@@ -17,7 +10,7 @@ section {
   display: grid;
   gap: 0.625rem;
   grid-template-columns: 1fr 2fr 1fr;
-  background: #fff;
+  background: rgb(218, 216, 216);
 
   .avatar {
     height: 6.25rem;
