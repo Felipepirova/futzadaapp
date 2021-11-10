@@ -19,14 +19,14 @@ export function CardList (){
   const [cardList, setCardList] = useState<CardItem[]>([])
 
    var arrayStatic = [
-     {avatar:"",name:"Pirova",data:{media:7,goal:7,pen:7,assist:7,}},
-     {avatar:"",name:"Amaral",data:{media:7,goal:7,pen:7,assist:7,}},
-     {avatar:"",name:"Furtado",data:{media:7,goal:7,pen:7,assist:7,}},
-     {avatar:"",name:"Dudu",data:{media:7,goal:7,pen:7,assist:7,}},
-     {avatar:"",name:"Felix",data:{media:7,goal:7,pen:7,assist:7,}},
-     {avatar:"",name:"tavinho",data:{media:7,goal:7,pen:7,assist:7,}},
-     {avatar:"",name:"Mateus",data:{media:7,goal:7,pen:7,assist:7,}},
-     {avatar:"",name:"Joa",data:{media:7,goal:7,pen:7,assist:7,}},
+     {avatar:"images/piro.png",name:"Pirova",data:{media:7,goal:7,pen:7,assist:7,}},
+     {avatar:"images/amaral.png",name:"Amaral",data:{media:7,goal:7,pen:7,assist:7,}},
+     {avatar:"images/furto.png",name:"Furtado",data:{media:7,goal:7,pen:7,assist:7,}},
+     {avatar:"images/du.png",name:"Dudu",data:{media:7,goal:7,pen:7,assist:7,}},
+     {avatar:"images/lucas.png",name:"Felix",data:{media:7,goal:7,pen:7,assist:7,}},
+     {avatar:"images/tavo.png",name:"tavinho",data:{media:7,goal:7,pen:7,assist:7,}},
+     {avatar:"images/mat.png",name:"Mateus",data:{media:7,goal:7,pen:7,assist:7,}},
+     {avatar:"images/joao.png",name:"Joa",data:{media:7,goal:7,pen:7,assist:7,}},
   ]
   
   useEffect(()=>{

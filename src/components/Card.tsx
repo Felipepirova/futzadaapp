@@ -1,5 +1,4 @@
 import "../styles/card.scss"
-import {ReactComponent as Avatar} from '../images/amaral.svg';
 
 interface CardProps  {
   card:{
@@ -14,12 +13,10 @@ interface CardProps  {
   }
 }
 
-//Fazer validação sem avatar
-
 export function Card (props: CardProps){
   return(
     <div className="card">
-      <Avatar className="avatar"/>
+      <img src={props.card.avatar}/>
       <div className="left">
         <h1>{props.card.name}</h1>
         <p>Media:{props.card.data.media}</p>
