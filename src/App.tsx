@@ -1,8 +1,17 @@
 import "../src/styles/global.scss"
+import {Card} from "../src/components/Card"
 
 function App() {
+
   return (
-    <h1>Hello Futzada</h1>
+    <>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    </>
   );
 }
 
