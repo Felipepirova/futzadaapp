@@ -1,13 +1,11 @@
-import "../src/styles/global.scss"
-import {Home} from "./pages/Home"
+import { Home } from './pages/Home'
+import { GlobalStyle } from './styles/global'
 
-function App() {
-
+export function App() {
   return (
     <>
-      <Home/>
+      <GlobalStyle />
+      <Home />
     </>
-  );
+  )
 }
-
-export default App;
