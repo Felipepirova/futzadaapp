@@ -5,31 +5,37 @@ import { createServer, Model } from 'miragejs'
 
 createServer({
   models: {
-    players: Model
+    leagues: Model
   },
 
   seeds(server) {
     server.db.loadData({
-      players: [
+      leagues: [
         {
           id: 0,
-          name: 'pirova',
-          data: {
-            average: 7,
-            goal: 3,
-            pen: 1,
-            assist: 12
-          }
-        },
-        {
-          id: 1,
-          name: 'amaral',
-          data: {
-            average: 7,
-            goal: 3,
-            pen: 1,
-            assist: 12
-          }
+          name: 'Futeba',
+          players: [
+            {
+              id: 0,
+              name: 'pirova',
+              data: {
+                average: 7,
+                goal: 3,
+                pen: 1,
+                assist: 12
+              }
+            },
+            {
+              id: 1,
+              name: 'amaral',
+              data: {
+                average: 7,
+                goal: 3,
+                pen: 1,
+                assist: 12
+              }
+            }
+          ]
         }
       ]
     })
@@ -37,13 +43,13 @@ createServer({
 
   routes() {
     this.namespace = 'api'
-    this.get('/players', () => {
-      return this.schema.all('players')
+    this.get('/leagues', () => {
+      return this.schema.all('leagues')
     })
-    this.post('players', (schema, request) => {
+    this.post('leagues', (schema, request) => {
       const data = JSON.parse(request.requestBody)
 
-      return schema.create('players', data)
+      return schema.create('leagues', data)
     })
   }
 })
