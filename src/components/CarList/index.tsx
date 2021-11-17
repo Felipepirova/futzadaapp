@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { api } from '../../services/api'
 import { CardType } from '../../types/Card'
 import { Card } from '../Card'
 import { Container } from './style'
@@ -6,15 +7,10 @@ import { Container } from './style'
 export function CardList() {
   const [cardList, setCardList] = useState<CardType[]>([])
 
-  var arrayStatic = [
-    {
-      name: 'Pirova',
-      data: { media: 7, goal: 7, pen: 7, assist: 7 }
-    }
-  ]
-
   useEffect(() => {
-    setCardList(arrayStatic)
+    // api.get('players').then(response => console.log(response))
+
+    api.get('players').then(response => setCardList(response.data.players))
   }, [])
 
   return (

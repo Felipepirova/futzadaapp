@@ -1,7 +1,7 @@
 export interface CardType {
   name: string
   data: {
-    media: number
+    average: number
     goal: number
     pen: number
     assist: number
@@ -12,7 +12,7 @@ export interface CardsType {
   card: {
     name: string
     data: {
-      media: number
+      average: number
       goal: number
       pen: number
       assist: number
