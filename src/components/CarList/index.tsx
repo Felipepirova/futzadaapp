@@ -1,19 +1,10 @@
 import { useState, useEffect } from 'react'
+import { CardType } from '../../types/Card'
 import { Card } from '../Card'
 import { Container } from './style'
 
-interface CardItem {
-  name: string
-  data: {
-    media: number
-    goal: number
-    pen: number
-    assist: number
-  }
-}
-
 export function CardList() {
-  const [cardList, setCardList] = useState<CardItem[]>([])
+  const [cardList, setCardList] = useState<CardType[]>([])
 
   var arrayStatic = [
     {
